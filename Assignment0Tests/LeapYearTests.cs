@@ -2,12 +2,12 @@ namespace Assignment0;
 public class LeapYearTests
 {
     [Fact]
-    public void Is_Leap_Year_returns_false_when_1(){
+    public void Is_Leap_Year_returns_false_when_1582(){
         // Assign
         var ly = new LeapYear();
 
         // Act
-        var result = ly.IsLeapYear(1);
+        var result = ly.IsLeapYear(1582);
 
         // Assert
         result.Should().Be(false);
