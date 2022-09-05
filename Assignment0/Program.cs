@@ -7,7 +7,7 @@ class Program
     private static void Main(string[] args)
     {
         Console.Write("Enter year: ");
-        string input = Console.ReadLine();
+        string? input = Console.ReadLine();
         int year;
         bool isParsable = Int32.TryParse(input, out year);
         var ly = new LeapYear();
